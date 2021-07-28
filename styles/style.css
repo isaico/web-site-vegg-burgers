@@ -181,7 +181,7 @@ nav {
     transform: translateX(-50%) translateY(-50%);
     width: 300px;
     height:50px;
-    background-image: url(/assets/brush.png);
+    background-image: url(./assets/brush.png);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
@@ -1064,7 +1064,7 @@ form>h4 {
 
 .main-bg {
     background-color: var(--white);
-    background-image: url(/assets/main-bg.png);
+    background-image: url(./assets/main-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1073,7 +1073,7 @@ form>h4 {
 
 .main-bg-contact {
     background-color: var(--white);
-    background-image: url(/assets/main-bg-contact.png);
+    background-image: url(./assets/main-bg-contact.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1082,7 +1082,7 @@ form>h4 {
 
 .main-bg-products {
     background-color: var(--white);
-    background-image: url(/assets/main-bg-products.png);
+    background-image: url(./assets/main-bg-products.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1091,7 +1091,7 @@ form>h4 {
 
 .main-bg-community {
   
-    background-image: url(/assets/main-bg-community.png);
+    background-image: url(./assets/main-bg-community.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 45%;
@@ -1110,7 +1110,7 @@ form>h4 {
 
 .header__bg-contact {
 
-background-image: url(/assets/manos-burger-triangulo.png);
+background-image: url(./assets/manos-burger-triangulo.png);
 background-size: cover;
     /* poner cover en mediaqueri asi no hay achicamiento*/
 background-repeat: no-repeat;
@@ -1124,7 +1124,7 @@ background-color: var(--secondary-color);
 }
 
 .header__bg-com {
-    background-image: url(/assets/manos-planeta.png);
+    background-image: url(./assets/manos-planeta.png);
     /* background-color: #00DEA3; */
     background-position: center 40%;
     background-size: cover;
@@ -1132,7 +1132,7 @@ background-color: var(--secondary-color);
 }
 
 .header__bg-products {
-    background-image: url(../assets/burger-fondo-amarillo.png);
+    background-image: url(./assets/burger-fondo-amarillo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
