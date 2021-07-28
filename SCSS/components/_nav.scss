@@ -1,0 +1,207 @@
+/*================== NAV =================*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    background-color: var(--main-color);
+    box-shadow: 0 2px 2px rgba(0,0,0,.15);
+    position: fixed;
+    height: 80px;
+    width: 100vw;
+    z-index: 2;
+
+    // logo del nav
+    .logo {
+        width: 70px;
+        border-radius: 4rem;
+        margin-top: 5px;
+        margin-left: 10px;
+        box-shadow: 2px 2px 5px grey;
+
+        &:hover {
+            box-shadow: var(--secondary-color) 5px 5px 15px;
+            background-color: #5c16deb4;
+        }
+    }
+
+    // titulo del nav
+
+    .nav-title-container {
+        opacity: .8;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 300px;
+        height: 50px;
+        background-image: url(/assets/brush.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        .nav-title {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            font-size: 1.6em;
+            font-weight: 600;
+            color: black;
+        }
+    }
+
+    // Burger del nav
+
+    .btn-burger {
+        width: 90px;
+        z-index: 5;
+        position: absolute;
+        right: 3%;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        padding: 5px;
+        border-radius: 1rem;
+        border: none;
+
+        .burger-line {
+            height: 9px;
+            width: 70%;
+            background-color: var(--main-color-darker);
+            margin: 5px;
+            border: 1px solid black;
+
+            .burger-line:first-child {
+
+                border-radius: 5px 5px 0 0;
+                background-color: var(--fourth-color);
+            }
+
+            .burger-line:nth-child(2) {
+                border-radius: 5px 5px 5px 5px;
+            }
+
+            .burger-line:last-child {
+                border-radius: 0 0 5px 5px;
+                background-color: var(--fourth-color);
+            }
+
+            &:hover .burger-line {
+                box-shadow: var(--secondary-color) 0px 4px 14px;
+            }
+
+        }
+
+    }
+
+
+}
+
+// contenido colapsable
+.collapsible {
+
+    background-color: rgba(0, 0, 0, 0.445);
+    backdrop-filter: blur(200px);
+    -webkit-backdrop-filter: blur(200px);
+    -moz-backdrop-filter: blur(200px);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+
+    // lista de los botones del nav
+    .list-container {
+        position: absolute;
+        width: 100vw;
+        height: calc(100vh - 80px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .list-container>.nav__list {
+            flex-direction: column;
+            height: 100%;
+        }
+
+        // ul
+        .nav__list {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            justify-content: space-evenly;
+            align-items: center;
+
+            // li
+            .nav__child {
+                margin: 1rem 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 0rem;
+
+                // a
+                .nav-link {
+                    width: 130px;
+                    text-align: center;
+                    color: var(--main-color);
+                    text-decoration: none;
+                    border: solid 3px var(--main-color);
+                    font-weight: 700;
+                    border-radius: 2rem;
+                    padding: 5px;
+                    font-size: 1.3em;
+
+                    &:hover {
+                        color: var(--white);
+                        background-color: var(--main-color);
+                        text-shadow: 0px 0px 15px;
+                        box-shadow: var(--secondary-color) 4px 4px 4px;
+
+                    }
+                }
+
+                // icon
+                .nav-cart {
+                    align-self: center;
+                    padding: 1.5rem;
+                    width: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .nav-cart>svg {
+                        color: var(--main-color);
+                    }
+
+                    .nav-cart>.badge {
+                        margin: 1em;
+                        padding: .5rem;
+                    }
+
+                    &:hover svg {
+                        color: var(--white);
+                        cursor: pointer;
+                    }
+
+                    &:hover .badge {
+                        background-color: var(--main-color);
+                    }
+                }
+
+                .active {
+                    background-color: var(--main-color);
+                    color: var(--white);
+
+                    &:hover {
+                        box-shadow: var(--secondary-color) 4px 4px 4px;
+                        background-color: var(--secondary-color);
+                    }
+                }
+            }
+        }
+    }
+
+
+}

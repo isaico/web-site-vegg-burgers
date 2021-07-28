@@ -1,0 +1,101 @@
+
+/*================== Colors ================*/ 
+:root {
+    --main-color: #00DEA3;
+    --secondary-color: #5c16de;
+    --third-color: #6b6a69;
+    --fourth-color: #f5c345;
+    --main-color-darker: #03523dea;
+    --text-color-lightBlack: color: rgba(0, 0, 0, 0.842);
+    --white: #f0f0f0;
+}
+/*================== Fonts =================*/
+@font-face {
+    font-family: "vabulous";
+    src: url(/fonts/Vabulous.ttf);
+}
+
+.font-baloo {
+    font-family: "Baloo Bhaina 2", sans-serif;
+    margin: 0;
+}
+
+.font-vabulous {
+    font-family: "vabulous", sans-serif;
+}
+/*================== Reset ================*/
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.page-padding {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+/*================== Helpers & Auxiliars ================*/
+.bold {
+    font-weight: 900;
+}
+.nav__helper {
+    height: 80px;
+    background-color: var(--secondary-color);
+}
+.nav__helper-prod {
+    background-color: #FAD502;
+}
+.msgWelcome {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 300;
+    color: var(--text-color-lightBlack);
+    span {
+        color: var(--main-color);
+    }
+}
+
+// .msgWelcome>span {
+//     color: var(--main-color);
+// }
+/*================== Separator ===============*/
+.section-separator {
+    width: 150%;
+    height: 10rem;
+    position: relative;
+    left: -10px;
+    top: 50px;
+    background-color: var(--main-color);
+    transform: translateX(-100px);
+    transform: rotate(-2deg);
+    z-index: -1;
+        &::after{
+        content: "";
+        display: block;
+        width: 150%;
+        height: 5rem;
+        position: relative;
+        top: -100px;
+        background-color: var(--main-color-darker);
+        overflow-x: hidden;
+        }
+}
+
+// .section-separator::after {
+//     content: "";
+//     display: block;
+//     width: 150%;
+//     height: 5rem;
+//     position: relative;
+//     top: -100px;
+//     background-color: var(--main-color-darker);
+//     overflow-x: hidden;
+// }
+.section-wave {
+    background-color: #f5c345;
+    width: 100vw;
+    .section-wave__svg {
+        width: 100vw;
+    }
+}
+
+

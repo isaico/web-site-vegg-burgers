@@ -1,0 +1,88 @@
+
+/*================== Backgrounds =================*/
+
+#information-index {
+    background-color: var(--fourth-color)
+}
+
+
+.main-bg {
+    background-color: var(--white);
+    background-image: url(/assets/main-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main-bg-contact {
+    background-color: var(--white);
+    background-image: url(/assets/main-bg-contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main-bg-products {
+    background-color: var(--white);
+    background-image: url(/assets/main-bg-products.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main-bg-community {
+
+    background-image: url(/assets/main-bg-community.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 45%;
+    background-attachment: fixed;
+}
+.nav-contact {
+    background-color: var(--secondary-color);
+}
+/*================== Header =================*/
+
+.header__bg-index {
+    background-image: url(https://www.vegansproducts.com/wp-content/uploads/2019/05/Mission_Beliefs_1264x1000.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.header__bg-contact {
+
+    background-image: url(/assets/manos-burger-triangulo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 90%;
+    background-color: var(--secondary-color);
+}
+
+.contact-nav,
+#information-contact {
+    background-color: var(--white)
+}
+
+.header__bg-com {
+    background-image: url(/assets/manos-planeta.png);
+    background-position: center 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header__bg-products {
+    background-image: url(/assets/burger-fondo-amarillo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--fourth-color);
+}
+
+#information-products {
+    background-color: var(--white)
+}

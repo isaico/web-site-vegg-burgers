@@ -1,4 +1,4 @@
-/* nota: los estilos luego iran orientados a el diseño de la pagina, estos son conceptos para los desafios */
+
 
 :root {
     --main-color: #00DEA3;
@@ -96,7 +96,7 @@ nav {
     justify-content: space-between;
     padding: 0;
     background-color: var(--main-color);
-    box-shadow: 0 2px 2px rgb(0 0 0 / 15%);
+    box-shadow: 0 2px 2px rgba(0,0,0,.15);
     position: fixed;
     height: 80px;
     width: 100vw;
@@ -115,10 +115,7 @@ nav {
     box-shadow: 2px 2px 5px grey;
 }
 
-#logo__container {
-    height: 80px;
 
-}
 
 .logo:hover {
     box-shadow: var(--secondary-color) 5px 5px 15px;
@@ -409,7 +406,7 @@ h4 {
     color: #5c16deb4;
 }
 
-.cards:hover:hover {
+.cards:hover {
     filter: drop-shadow(4px 4px 15px var(--secondary-color));
 }
 
@@ -669,6 +666,7 @@ footer {
 #developer>h4 {
     color: crimson;
     padding-top: 3px;
+    font-size: .9em;
 }
 
 #footer-ul {
@@ -686,10 +684,6 @@ footer {
     margin-top: 3rem;
 }
 
-#developer>h4 {
-    font-size: .9em;
-
-}
 
 .social-icon-container-dev {
     display: flex;

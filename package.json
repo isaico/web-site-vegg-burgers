@@ -1,0 +1,26 @@
+{
+  "name": "proyect-final-coder-gh",
+  "version": "1.0.0",
+  "description": "mudando a sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss SCSS/main.scss CSS/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaico/Proyect-Final-Coder.git"
+  },
+  "author": "Isaias Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isaico/Proyect-Final-Coder/issues"
+  },
+  "homepage": "https://github.com/isaico/Proyect-Final-Coder#readme",
+  "devDependencies": {
+    "node": "^16.5.0",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}
