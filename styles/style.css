@@ -703,10 +703,6 @@ footer {
 }
 
 /* ------- products.html */
-.nav__helper-prod {
-    background-color: #FAD502;
-}
-
 .nav-products {
     background-color: var(--fourth-color);
 }
@@ -799,58 +795,6 @@ tr>td:nth-child(3) {
     width: 600px;
     height: 350px;
 }
-
-/* ----------contact.html */
-.nav-contact {
-    background-color: var(--secondary-color);
-}
-
-.nav__helper {
-    background-color: var(--secondary-color);
-}
-
-#information-contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#information-contact>section {
-    width: 90%;
-    /* height: ; */
-}
-
-form>fieldset {
-    padding: 2rem;
-    margin-bottom: 2rem;
-}
-
-.personal-container {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: wrap;
-    margin-top: 5rem;
-}
-
-.personal-container>* {
-    margin: 1rem;
-}
-
-.checkbox-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.reason-container {
-    display: flex;
-    justify-content: center;
-}
-
-.explain-container {
-    display: flex;
-    justify-content: center;
-}
-
 .carrusel {
     display: flex;
     flex-direction: column;
@@ -877,23 +821,64 @@ form>fieldset {
     margin-bottom: 5rem;
 }
 
+/* ----------contact.html */
+.nav-contact {
+    background-color: var(--secondary-color);
+}
+
+
+/*form>fieldset {
+    padding: 2rem;
+    margin-bottom: 2rem;
+}*/
+
+.personal-container {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin-top: 5rem;
+}
+
+.personal-container>* {
+    margin: 1rem;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reason-container {
+    display: flex;
+    justify-content: center;
+}
+
+.explain-container {
+    display: flex;
+    justify-content: center;
+}
+/* products section carrusel */
+
+
 /* form */
 
 form {
     color: var(--text-color-lightBlack);
 }
 
-form>h4 {
+/* form>h4 {
     font-size: 2em;
     font-weight: 600;
     color: #00DEA3;
-}
+} */
 
 .field {
     border: solid 1px #000;
     font-size: 1.5em;
     font-weight: 300;
     border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
 }
 
 .contact-input {
@@ -911,9 +896,6 @@ form>h4 {
 }
 
 .contact-select {
-    background-color: transparent;
-    color: #000;
-    font-size: 0.8em;
     font-weight: 500;
     border-radius: 0.5rem;
 }
@@ -954,7 +936,7 @@ form>h4 {
     font-size: 1em;
     font-weight: 700;
     border-radius: 2rem;
-    box-shadow: var(--secondary-color) 4px 4px 4px;
+    
     cursor: pointer;
 }
 
@@ -976,7 +958,7 @@ form>h4 {
 
 .form-button>input:hover {
     color: #fafafa;
-    box-shadow: var(--secondary-color) 4px 4px 4px;
+    box-shadow: var(--main-color) 4px 4px 4px;
     background-color: #5c16deb4;
     text-shadow: 0px 0px 15px;
 }

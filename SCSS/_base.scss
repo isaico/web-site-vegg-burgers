@@ -33,17 +33,17 @@ body {
     padding-left: 2rem;
     padding-right: 2rem;
 }
+.badge {
+    background-color: var(--secondary-color);
+}
 /*================== Helpers & Auxiliars ================*/
 .bold {
     font-weight: 900;
 }
 .nav__helper {
     height: 80px;
-    background-color: var(--secondary-color);
 }
-.nav__helper-prod {
-    background-color: #FAD502;
-}
+
 .msgWelcome {
     font-size: 1.5rem;
     text-align: center;
@@ -54,48 +54,31 @@ body {
     }
 }
 
-// .msgWelcome>span {
-//     color: var(--main-color);
-// }
 /*================== Separator ===============*/
 .section-separator {
-    width: 150%;
-    height: 10rem;
-    position: relative;
-    left: -10px;
-    top: 50px;
-    background-color: var(--main-color);
-    transform: translateX(-100px);
-    transform: rotate(-2deg);
-    z-index: -1;
-        &::after{
-        content: "";
-        display: block;
-        width: 150%;
-        height: 5rem;
-        position: relative;
-        top: -100px;
-        background-color: var(--main-color-darker);
-        overflow-x: hidden;
-        }
+  width: 100vw;
+  height: 15vh;
+  background-color: #00DEA3;
+  &::before{
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 10vh;
+      background-color: var(--main-color-darker);
+      transform: rotate(5deg) translateX(-200px);
+      z-index: -10;
+
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--main-color-darker);
+    transform: rotate(-5deg) translateX(200px);
+    z-index: -10;
+  }
 }
 
-// .section-separator::after {
-//     content: "";
-//     display: block;
-//     width: 150%;
-//     height: 5rem;
-//     position: relative;
-//     top: -100px;
-//     background-color: var(--main-color-darker);
-//     overflow-x: hidden;
-// }
-.section-wave {
-    background-color: #f5c345;
-    width: 100vw;
-    .section-wave__svg {
-        width: 100vw;
-    }
-}
 
 

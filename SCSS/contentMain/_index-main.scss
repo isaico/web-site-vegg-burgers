@@ -1,4 +1,4 @@
-/*=========== Index main content===========*/
+/*=========== Index.html===========*/
 /*=========== Filter=*/
 .filter-container {
     margin: 6rem 0;
@@ -11,7 +11,7 @@
     width: 100%;
     align-items: center;
 
-    /*icono*/
+    // /*icono*/
     .filter-icon {
         align-self: center;
         width: 2vw;
@@ -19,7 +19,7 @@
         margin: 8px;
     }
 
-    /* labels del filtro */
+    // /* labels del filtro */
     .filter-label {
         color: rgba(0, 0, 0, 0.719);
         margin: 5px;
@@ -41,7 +41,7 @@
         filter: drop-shadow(4px 4px 15px var(--third-color));
         margin: 2rem 2rem;
 
-        /* foto de la tarjeta y su forma */
+        // /* foto de la tarjeta y su forma */
         .card__img {
 
             clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
@@ -55,7 +55,7 @@
                 height: 300px;
                 background-color: rgba(0, 0, 0, .685);
 
-                /*botton de add*/
+                // /*botton de add*/
                 button {
                     padding: 8px;
                     background-color: #00DEA3;
@@ -75,7 +75,7 @@
                     }
                 }
 
-                /*descripcion del item*/
+                // /*descripcion del item*/
                 >p {
                     color: #fff;
                     text-align: center;
@@ -106,7 +106,7 @@
 
         }
 
-        /*efectos de hover a la tarjeta*/
+        // /*efectos de hover a la tarjeta*/
         &:hover .card__price {
             color: #5c16deb4;
         }
@@ -128,7 +128,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0 auto 2fr 10vh;
 
-    /*about-h2,p*/
+    // /*about-h2,p*/
     #info {
         grid-row: 2/3;
         grid-column: 1/3;
@@ -157,7 +157,7 @@
         }
     }
 
-    /*Miembros*/
+    // /*Miembros*/
     .member-container {
         grid-row: 3/4;
         grid-column: 1/3;
@@ -165,7 +165,7 @@
         flex-direction: row;
         width: 100%;
 
-        /*pripiedades de los miembros*/
+        // /*pripiedades de los miembros*/
         .member {
             display: flex;
 
@@ -178,7 +178,7 @@
                 padding: 1rem 1rem;
             }
 
-            /*titulo*/
+            // /*titulo*/
             .member-title {
                 color: var(--text-color-lightBlack);
                 font-weight: 400;
@@ -186,7 +186,7 @@
                 margin-bottom: 2rem;
             }
 
-            /*texto*/
+            // /*texto*/
             .member-text {
                 color: rgb(22, 22, 22);
                 font-weight: 400;
@@ -195,13 +195,13 @@
             }
         }
 
-        /*miembro 1*/
+        // /*miembro 1*/
         #member-1 {
             border-top: 1px solid #0005;
             border-right: 1px solid #0005;
         }
 
-        /*miembro 2*/
+        // /*miembro 2*/
         #member-2 {
 
             border-bottom: 1px solid #0005;
@@ -216,7 +216,7 @@
         align-items: flex-start;
         justify-content: space-evenly;
         background-color: var(--white);
-        /*contenedor de los iconos y textos*/
+        // /*contenedor de los iconos y textos*/
         .icons__child {
             display: flex;
             flex-direction: column;
