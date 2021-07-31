@@ -6,7 +6,7 @@ header {
     justify-content: space-between;
     overflow-x: hidden;
 
-    * {
+    >* {
         padding-bottom: 1rem;
     }
 
@@ -25,7 +25,7 @@ header {
         }
 
         // subtitlulo
-        .header__info>h2 {
+        &>h2 {
             padding: 10px;
             margin: 0;
             opacity: 0;
@@ -42,8 +42,8 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-
-        * {
+        transform: translateX(200px);
+        > * {
             padding-top: 15px;
         }
     }
@@ -52,7 +52,7 @@ header {
     .down-arrow {
         position: absolute;
         left: calc(50% - 25px);
-        bottom: 5%;
+        bottom: 4%;
         width: 50px;
         opacity: .8;
         text-decoration: none;

@@ -59,15 +59,16 @@ body {
   width: 100vw;
   height: 15vh;
   background-color: #00DEA3;
+  
   &::before{
       content: "";
       position: absolute;
+     
       width: 100vw;
       height: 10vh;
       background-color: var(--main-color-darker);
       transform: rotate(5deg) translateX(-200px);
-      z-index: -10;
-
+      
   }
   &::after{
     content: "";
@@ -76,7 +77,7 @@ body {
     height: 10vh;
     background-color: var(--main-color-darker);
     transform: rotate(-5deg) translateX(200px);
-    z-index: -10;
+    
   }
 }
 

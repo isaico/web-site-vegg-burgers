@@ -9,6 +9,7 @@
 .main-bg {
     background-color: var(--white);
     background-image: url(/assets/main-bg.png);
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -85,4 +86,12 @@
 
 #information-products {
     background-color: var(--white)
+}
+
+// section wave
+.section-wave {
+    background-color: #f5c345;
+    .section-wave__svg {
+        width: 100vw;
+    }
 }
