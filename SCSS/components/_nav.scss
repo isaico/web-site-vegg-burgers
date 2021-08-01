@@ -27,7 +27,7 @@ nav {
     //  titulo del nav
 
     .nav-title-container {
-        opacity: .8;
+        opacity: 0;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -141,7 +141,7 @@ nav {
             padding: 0;
             justify-content: space-evenly;
             align-items: center;
-            height: 100%;
+            height: 100vh;
 
             // li
             .nav__child {

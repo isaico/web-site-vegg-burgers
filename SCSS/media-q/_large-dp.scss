@@ -1,0 +1,123 @@
+/*======================= Large ==================*/
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+
+    /*Header*/
+    header {
+        .header__info {
+            .header__infoh2 {
+                display: visible;
+
+            }
+        }
+
+        .header__img {
+
+            >img {
+                width: 90px;
+            }
+
+        }
+
+        .down-arrow {
+            bottom: 3%
+        }
+
+    }
+
+    /*informacion about*/
+
+    #information-index {
+
+
+
+        // info
+        #info {
+            grid-row: 2/3;
+
+            padding: 3rem;
+
+            h2 {
+                font-size: 2.2em;
+            }
+
+            >p {
+                font-size: 1.5em;
+                word-spacing: 3px;
+                line-height: 2;
+            }
+        }
+
+        .member-container {
+            display: flex;
+            flex-direction: row;
+
+            // clases comunes de miembros
+            .member {
+                flex-direction: column;
+                align-items: center;
+                padding-top: 2rem;
+
+                >img {
+
+                    object-fit: cover;
+                    padding-bottom: 5vh;
+                    // width: 250px;
+                    justify-self: center;
+                    align-self: center;
+                }
+
+                .member-text {
+                    font-size: 1.5em;
+                    line-height: 2;
+                    word-spacing: 3px;
+                }
+
+                .member-title {
+                    font-size: 2em;
+                    text-align: center;
+                }
+            }
+
+            // 
+            #member-1 {
+                grid-row: 2/3;
+                border: none;
+                border-bottom: none;
+                border-top: 1px solid #0005;
+                border-right: 1px solid #0005;
+            }
+
+            // 
+            #member-2 {
+                padding-top: none;
+                grid-row: 3/4;
+                border-bottom: none;
+                border-bottom: 1px solid #0005;
+            }
+
+        }
+    }
+
+    /*======================= products ==================*/
+    table {
+        font-size: 1.2em;
+    }
+
+    /*======================= community ==================*/
+    .comm-grid {
+        grid-template-rows: 2fr 2fr 1fr 2fr;
+
+        img {
+            align-self: center;
+        }
+
+        #pic-1 {
+            grid-row: 1/2;
+        }
+
+        #pic-2 {
+            grid-row: 2/3;
+        }
+    }
+}

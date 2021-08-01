@@ -3,11 +3,12 @@
 
 
 .table-container {
-    padding: 10vh 0;
+    padding: 7rem 0;
    
     thead>tr {
         background-color: var(--secondary-color);
         color: var(--white);
+        text-align: center;
     }
 
     tbody>tr>:nth-child(1) {

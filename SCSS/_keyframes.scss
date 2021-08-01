@@ -80,15 +80,15 @@
 /*================= Header svgs ============ */
 /*fade-in to left*/
 #h-img1 {
-    animation: fadein-toleft 2s ease-out forwards 2.7s;
+    animation: fadein-toleft 2s ease-out forwards 2.5s;
 }
 
 #h-img2 {
-    animation: fadein-toleft 2s ease-out forwards 2.8s;
+    animation: fadein-toleft 2s ease-out forwards 2.6s;
 }
 
 #h-img3 {
-    animation: fadein-toleft 2s ease-out forwards 2.9s;
+    animation: fadein-toleft 2s ease-out forwards 2.7s;
 }
 
 /* no delay animations*/
@@ -216,18 +216,15 @@
 /*================= Titulo del nav  ============ */
 .nav-title-container{
 
-    animation: fadein 2s ease-out forwards .3s;
+    animation: fadein 1s linear forwards 2.5s;
+    
 }
 
 // fade in animation
 @keyframes fadein {
-    from {
-        opacity: 0;
-
-    }
-
+    
     to {
-        opacity: 1;
+        opacity: .8;
 
     }
 }

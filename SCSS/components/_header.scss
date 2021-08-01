@@ -1,6 +1,7 @@
 /*================== Header =================*/
 header {
     height: calc(100vh - 80px);
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,6 +23,7 @@ header {
         .header__svg-size {
             width: 500px;
             height: 127px;
+            
         }
 
         // subtitlulo
@@ -43,8 +45,11 @@ header {
         flex-direction: column;
         justify-content: space-evenly;
         transform: translateX(200px);
+        
+
         > * {
             padding-top: 15px;
+            opacity: 0;
         }
     }
 
