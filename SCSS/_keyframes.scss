@@ -417,5 +417,15 @@
         fill: rgba(0, 0, 0, 0.849);
     }
 }
+.slider-list{
+    animation: slider 10s ease infinite alternate;
+}
+@keyframes slider {
 
-
+    0%{margin-left: 0;}
+    30%{margin-left: 0;}
+    35%{margin-left: -100%;}
+    65%{margin-left: -100%;}
+    70%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+}

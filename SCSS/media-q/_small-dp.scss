@@ -335,6 +335,49 @@
         }
     }
 
+    /* ================= products ============= */
+    
+.table-container {
+    padding: 7rem 0;
+
+    thead>tr {
+        background-color: var(--secondary-color);
+        color: var(--white);
+        text-align: center;
+        font-size: 1em;
+    }
+
+    tbody>tr>:nth-child(1) {
+
+        text-align: center;
+
+    }
+
+    th,
+    td {
+        border: solid 1px black;
+        border-radius: 5px;
+        
+    }
+
+    tr {
+        background-color: transparent;
+
+        >td:nth-child(3) {
+            text-align: center;
+        }
+    }
+
+    ol,
+    ul {
+        
+        margin:auto;
+        padding-left: .5rem;
+        
+    }
+
+}
+
     /* ================= community ============= */
     .main-bg-community{
         background-size: 100% 80%;
@@ -394,6 +437,14 @@
         }
 
     }
-
+    .slider{
+        .slider-list{
+            li{
+                img{
+                    height: auto;
+                }
+            }
+        }
+    }
 
 }

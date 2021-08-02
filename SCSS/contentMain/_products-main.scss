@@ -4,18 +4,18 @@
 
 .table-container {
     padding: 7rem 0;
-    
+
     thead>tr {
         background-color: var(--secondary-color);
         color: var(--white);
         text-align: center;
-       font-size: 1.2em;
+        font-size: 1.2em;
     }
 
     tbody>tr>:nth-child(1) {
 
         text-align: center;
-      
+
     }
 
     th,
@@ -32,9 +32,12 @@
             text-align: center;
         }
     }
-    ol,ul{
+
+    ol,
+    ul {
         margin-top: 1rem;
-        li{
+
+        li {
             padding: .2rem;
         }
     }
@@ -53,7 +56,8 @@
 
 .video {
 
-    padding-bottom: 10vh;
+    padding-top: 10vh ;
+    padding-bottom: 10vh ;
     background-color: var(--main-color);
     display: flex;
     flex-direction: column;
@@ -72,7 +76,7 @@
 
 /*================== Carrusel =================*/
 .carrusel {
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,11 +96,29 @@
         margin-bottom: 5rem;
     }
 }
-.carousel {
-    width: 60vw;
-    margin-bottom: 5rem;
-}
-.carousel-items{
-    width: 60vw;
-    height: 50vh;
+
+.slider {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 5rem;
+    .slider-list {
+        display: flex;
+        padding: 0;
+        width: 300%;
+        
+        li {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            img {
+                
+                height: auto;
+                width: 80vw;
+                border-radius: 1rem;
+            }
+        }
+
+    }
 }

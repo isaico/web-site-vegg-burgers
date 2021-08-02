@@ -242,7 +242,17 @@
         }
 
     }
-
+    
+    /* ================= products ============= */
+    .slider{
+        .slider-list{
+            li{
+                img{
+                    height: auto;
+                }
+            }
+        }
+    }
     /* ================= community ============= */
     .comm-grid {
 
