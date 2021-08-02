@@ -81,6 +81,16 @@ body {
     
   }
 }
+// section wave
+.section-wave {
+   transform: translateY(-1px);
+    
+    .section-wave__svg {
+        transform: translateY(-1px);
+        width: 100vw;
+    }
+}
+
 
 
 

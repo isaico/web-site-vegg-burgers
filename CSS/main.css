@@ -68,6 +68,12 @@ body {
     background-color: var(--main-color-darker);
     transform: rotate(-5deg) translateX(200px); }
 
+.section-wave {
+  transform: translateY(-1px); }
+  .section-wave .section-wave__svg {
+    transform: translateY(-1px);
+    width: 100vw; }
+
 /*================== NAV =================*/
 nav {
   display: flex;
@@ -296,7 +302,8 @@ main {
 h1 {
   font-weight: 500;
   font-size: 2.5em;
-  color: var(--text-color-lightBlack); }
+  color: var(--text-color-lightBlack);
+  text-align: center; }
 
 /*================== Footer =================*/
 footer {
@@ -543,17 +550,23 @@ footer {
   .table-container thead > tr {
     background-color: var(--secondary-color);
     color: var(--white);
-    text-align: center; }
+    text-align: center;
+    font-size: 1.2em; }
   .table-container tbody > tr > :nth-child(1) {
     text-align: center; }
   .table-container th,
   .table-container td {
     border: solid 1px black;
-    border-radius: 5px; }
+    border-radius: 5px;
+    padding: 1em; }
   .table-container tr {
     background-color: transparent; }
     .table-container tr > td:nth-child(3) {
       text-align: center; }
+  .table-container ol, .table-container ul {
+    margin-top: 1rem; }
+    .table-container ol li, .table-container ul li {
+      padding: .2rem; }
 
 /*================== Video =================*/
 #iframe-h2 {
@@ -688,8 +701,9 @@ form {
   grid-template-rows: 2fr 2fr 1fr 2fr; }
   .comm-grid > img {
     object-fit: cover;
-    max-height: 500px;
-    width: 100%; }
+    align-self: center;
+    width: 33vw;
+    justify-self: center; }
   .comm-grid > div > h2 {
     color: var(--main-color-darker);
     font-size: 2em;
@@ -799,11 +813,6 @@ form {
 
 #information-products {
   background-color: var(--white); }
-
-.section-wave {
-  background-color: #f5c345; }
-  .section-wave .section-wave__svg {
-    width: 100vw; }
 
 /*================= Keyframes ============ */
 /*================= Presentation ============ */
@@ -1152,6 +1161,8 @@ form {
   .main-bg {
     background-size: 100% 80%;
     background-repeat: repeat-y; }
+  .main-bg .msgWelcome > span {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.164); }
   .main-h2 {
     font-size: 2.5em; }
   #filter {
@@ -1235,7 +1246,7 @@ form {
     background-size: 100% 80%;
     background-repeat: repeat-y; }
   table {
-    font-size: .7em; }
+    font-size: .8em; }
   .video iframe {
     width: 250px;
     height: 200px; }

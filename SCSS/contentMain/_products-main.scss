@@ -4,22 +4,25 @@
 
 .table-container {
     padding: 7rem 0;
-   
+    
     thead>tr {
         background-color: var(--secondary-color);
         color: var(--white);
         text-align: center;
+       font-size: 1.2em;
     }
 
     tbody>tr>:nth-child(1) {
 
         text-align: center;
+      
     }
 
     th,
     td {
         border: solid 1px black;
         border-radius: 5px;
+        padding: 1em;
     }
 
     tr {
@@ -27,6 +30,12 @@
 
         >td:nth-child(3) {
             text-align: center;
+        }
+    }
+    ol,ul{
+        margin-top: 1rem;
+        li{
+            padding: .2rem;
         }
     }
 

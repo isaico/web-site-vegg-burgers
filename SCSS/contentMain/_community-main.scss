@@ -12,8 +12,9 @@
     // modificaciones generales de la grilla
     >img {
         object-fit: cover;
-        max-height: 500px;
-        width: 100%;
+        align-self: center;
+        width: 33vw;
+        justify-self: center;
     }
 
     >div>h2 {

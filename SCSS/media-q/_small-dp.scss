@@ -84,6 +84,14 @@
         background-size: 100% 80%;
         background-repeat: repeat-y;
     }
+    .main-bg {
+        .msgWelcome {
+            >span {
+                text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.164);
+            }
+        }
+
+    }
     .main-h2 {
         font-size: 2.5em;
     }
@@ -250,7 +258,7 @@
         background-repeat: repeat-y;
     }
     table {
-        font-size: .7em;
+        font-size: .8em;
     }
 
     .video {
