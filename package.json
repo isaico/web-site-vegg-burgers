@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss SCSS/main.scss CSS/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "limpiacss":"purgecss --css ./bootstrap-5/css/*.min.css --content *.html --output ./csspurged/css/" 
   },
   "repository": {
     "type": "git",

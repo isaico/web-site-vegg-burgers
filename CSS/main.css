@@ -97,20 +97,22 @@ nav {
   nav .nav-title-container {
     opacity: 0;
     position: absolute;
+    top: 25%;
     left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 300px;
+    transform: translateX(-50%);
+    width: 250px;
     height: 50px;
     background-image: url(/assets/brush.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center; }
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
     nav .nav-title-container .nav-title {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translateX(-50%) translateY(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 1.6em;
       font-weight: 600;
       color: black; }
@@ -153,9 +155,9 @@ nav {
 /* contenido colapsable*/
 .collapsible {
   background-color: rgba(0, 0, 0, 0.445);
-  backdrop-filter: blur(200px);
   -webkit-backdrop-filter: blur(200px);
   -moz-backdrop-filter: blur(200px);
+  backdrop-filter: blur(200px);
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -609,6 +611,10 @@ footer {
 .carousel {
   width: 60vw;
   margin-bottom: 5rem; }
+
+.carousel-items {
+  width: 60vw;
+  height: 50vh; }
 
 /*=============== Contact.html ================*/
 /*=============== Formulario ================*/
