@@ -43,6 +43,107 @@
     }
 
 }
+/*================== Tarjetas =================*/
+.card-prod{
+    margin: 5rem 3rem;
+    
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px grey;
+    width: 350px;
+    .card-prod-head{
+        border-radius: 3rem 3rem 0 0;
+        position: relative;
+        background: linear-gradient(-45deg,rgb(197, 197, 197),#5c16de);
+        height: 280px;
+        color: var(--white);
+        
+        svg{
+            position: absolute;
+            left: 10%;
+            top: -10%;
+            width: 80px;
+        }
+        .card-prod-img{
+            width: 250px;
+            position: absolute;
+            left: 50%;
+            bottom: 10%;
+        }
+        .card-prod-title{
+            margin: 4rem 2rem 2rem 2rem ;
+            font-size: 2em;
+        }
+        .card-prod-subtitle{
+            width: 45%;
+            margin: 0rem 2rem;
+            font-size: .8em;
+        }
+        .card-prod-fade{
+            opacity: 0.1;
+            margin: 0rem 0rem 0rem .3rem;
+            font-size: 4rem;
+            font-weight: 700;
+            color: black;
+        }
+    }
+    h2,h3{
+        font-size: 2rem;
+        font-weight: 600;
+        
+    }
+    .card-prod-body{
+        background-color: rgb(230, 230, 230);
+        padding: 2rem;
+        padding-bottom: 0;
+        color: var(--text-color-lightBlack);
+        .card-prod-stars{
+            svg{
+                margin-top: 1rem;
+                margin-right: 1rem;
+            }
+        }
+        .card-prod-desc{
+            list-style:none;
+        }
+    }
+    .card-prod-foot{
+        background-color: rgb(230, 230, 230);
+        padding: 2rem;
+        border-radius: 0 0 3rem 3rem;
+        .card-prod-ft-list{
+            list-style: none;
+            display: flex;
+            padding-left: 0;
+            margin: 1rem 0;
+            li{
+                width: 25px;
+                height: 25px;
+                padding: .2em;
+                border-radius: 100%;
+                text-align: center;
+                margin-right: 2rem;
+                justify-content: center;
+                align-items: center;
+                a{
+                    text-decoration: none;
+                    font-size: 1em;
+                    font-weight: 600;
+                    color: black;
+                    
+                }
+            }
+            .size-active{
+                background-color: var(--main-color);
+                border-radius: 100%;
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+}
 
 /*================== Video =================*/
 #iframe-h2 {
@@ -75,7 +176,7 @@
 }
 
 /*================== Carrusel =================*/
-.carrusel {
+.slider-info {
 
     display: flex;
     flex-direction: column;
@@ -114,7 +215,7 @@
             justify-content: center;
             img {
                 
-                height: auto;
+                height: 80vh;
                 width: 80vw;
                 border-radius: 1rem;
             }
