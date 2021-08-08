@@ -573,83 +573,118 @@ footer {
       padding: .2rem; }
 
 /*================== Tarjetas =================*/
-.card-prod {
-  margin: 5rem 3rem;
-  border-radius: 3rem;
+.card-prod-container {
   display: flex;
-  flex-direction: column;
-  box-shadow: 1px 1px 5px grey;
-  width: 350px; }
-  .card-prod .card-prod-head {
-    border-radius: 3rem 3rem 0 0;
-    position: relative;
-    background: linear-gradient(-45deg, #c5c5c5, #5c16de);
-    height: 280px;
-    color: var(--white); }
-    .card-prod .card-prod-head svg {
-      position: absolute;
-      left: 10%;
-      top: -10%;
-      width: 80px; }
-    .card-prod .card-prod-head .card-prod-img {
-      width: 250px;
-      position: absolute;
-      left: 50%;
-      bottom: 10%; }
-    .card-prod .card-prod-head .card-prod-title {
-      margin: 4rem 2rem 2rem 2rem;
-      font-size: 2em; }
-    .card-prod .card-prod-head .card-prod-subtitle {
-      width: 45%;
-      margin: 0rem 2rem;
-      font-size: .8em; }
-    .card-prod .card-prod-head .card-prod-fade {
-      opacity: 0.1;
-      margin: 0rem 0rem 0rem .3rem;
-      font-size: 4rem;
-      font-weight: 700;
-      color: black; }
-  .card-prod h2, .card-prod h3 {
-    font-size: 2rem;
-    font-weight: 600; }
-  .card-prod .card-prod-body {
-    background-color: #e6e6e6;
-    padding: 2rem;
-    padding-bottom: 0;
-    color: var(--text-color-lightBlack); }
-    .card-prod .card-prod-body .card-prod-stars svg {
-      margin-top: 1rem;
-      margin-right: 1rem; }
-    .card-prod .card-prod-body .card-prod-desc {
-      list-style: none; }
-  .card-prod .card-prod-foot {
-    background-color: #e6e6e6;
-    padding: 2rem;
-    border-radius: 0 0 3rem 3rem; }
-    .card-prod .card-prod-foot .card-prod-ft-list {
-      list-style: none;
-      display: flex;
-      padding-left: 0;
-      margin: 1rem 0; }
-      .card-prod .card-prod-foot .card-prod-ft-list li {
-        width: 25px;
-        height: 25px;
-        padding: .2em;
-        border-radius: 100%;
-        text-align: center;
-        margin-right: 2rem;
-        justify-content: center;
-        align-items: center; }
-        .card-prod .card-prod-foot .card-prod-ft-list li a {
-          text-decoration: none;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .card-prod-container .card-prod {
+    margin: 5rem 4rem;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px grey;
+    width: 350px; }
+    .card-prod-container .card-prod .card-body-title {
+      font-size: 1.6em;
+      font-weight: 600; }
+    .card-prod-container .card-prod .card-prod-head {
+      border-radius: 3rem 3rem 0 0;
+      position: relative;
+      background: linear-gradient(-45deg, #c5c5c5, #5c16de);
+      height: 280px;
+      color: var(--white); }
+      .card-prod-container .card-prod .card-prod-head svg {
+        position: absolute;
+        left: 10%;
+        top: -10%;
+        width: 80px; }
+      .card-prod-container .card-prod .card-prod-head .card-prod-img {
+        width: 250px;
+        position: absolute;
+        left: 50%;
+        bottom: 10%; }
+      .card-prod-container .card-prod .card-prod-head .card-prod-title {
+        margin: 4rem 2rem 2rem 2rem;
+        font-size: 2.2em; }
+      .card-prod-container .card-prod .card-prod-head .card-prod-subtitle {
+        width: 45%;
+        margin: 0rem 2rem;
+        font-size: .9em;
+        font-weight: 500; }
+      .card-prod-container .card-prod .card-prod-head .card-prod-fade {
+        opacity: 0.05;
+        margin: 0rem 0rem 0rem .3rem;
+        font-size: 4rem;
+        font-weight: 700;
+        color: black; }
+      .card-prod-container .card-prod .card-prod-head .fade-1 {
+        position: absolute;
+        top: 10%; }
+      .card-prod-container .card-prod .card-prod-head .fade-2 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); }
+      .card-prod-container .card-prod .card-prod-head .fade-3 {
+        position: absolute;
+        bottom: 10%; }
+    .card-prod-container .card-prod .card-prod-body {
+      background-color: #e6e6e6;
+      padding: 2rem;
+      padding-bottom: 0;
+      color: var(--text-color-lightBlack); }
+      .card-prod-container .card-prod .card-prod-body .card-prod-stars svg {
+        margin-top: 1rem;
+        margin-right: 1rem;
+        color: var(--main-color);
+        width: 1em;
+        height: 1em; }
+      .card-prod-container .card-prod .card-prod-body .card-prod-desc {
+        list-style: none;
+        padding: 0; }
+        .card-prod-container .card-prod .card-prod-body .card-prod-desc li {
+          padding: .3rem 0;
+          border-bottom: 1px solid var(--secondary-color); }
+    .card-prod-container .card-prod .card-prod-foot {
+      background-color: #e6e6e6;
+      padding: 2rem;
+      border-radius: 0 0 3rem 3rem;
+      position: relative; }
+      .card-prod-container .card-prod .card-prod-foot .card-prod-ft-list {
+        list-style: none;
+        display: flex;
+        padding-left: 0;
+        margin: 1rem 0; }
+        .card-prod-container .card-prod .card-prod-foot .card-prod-ft-list li {
+          width: 25px;
+          height: 25px;
+          padding: .2em;
+          border-radius: 100%;
+          text-align: center;
+          margin-right: 2rem;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--main-color);
+          border-radius: 100%;
           font-size: 1em;
           font-weight: 600;
-          color: black; }
-      .card-prod .card-prod-foot .card-prod-ft-list .size-active {
-        background-color: var(--main-color);
-        border-radius: 100%; }
-        .card-prod .card-prod-foot .card-prod-ft-list .size-active a {
+          color: black;
           color: white; }
+        .card-prod-container .card-prod .card-prod-foot .card-prod-ft-list .size-active {
+          background-color: var(--main-color);
+          border-radius: 100%; }
+          .card-prod-container .card-prod .card-prod-foot .card-prod-ft-list .size-active a {
+            color: white; }
+      .card-prod-container .card-prod .card-prod-foot .foot-badge {
+        position: absolute;
+        right: -5%;
+        bottom: 40%;
+        font-size: 1.5em;
+        font-weight: 600;
+        background-color: var(--secondary-color);
+        color: var(--white);
+        border-radius: 1rem;
+        padding: 5px 15px;
+        box-shadow: 1px 1px 5px grey; }
 
 /*================== Video =================*/
 #iframe-h2 {
