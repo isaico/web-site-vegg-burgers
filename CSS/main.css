@@ -546,32 +546,6 @@ footer {
       font-size: 2em; }
 
 /*================== Products.html =================*/
-/*================== Tabla =================*/
-.table-container {
-  padding: 7rem 0; }
-  .table-container thead > tr {
-    background-color: var(--secondary-color);
-    color: var(--white);
-    text-align: center;
-    font-size: 1.2em; }
-  .table-container tbody > tr > :nth-child(1) {
-    text-align: center; }
-  .table-container th,
-  .table-container td {
-    border: solid 1px black;
-    border-radius: 5px;
-    padding: 1em; }
-  .table-container tr {
-    background-color: transparent; }
-    .table-container tr > td:nth-child(3) {
-      text-align: center; }
-  .table-container ol,
-  .table-container ul {
-    margin-top: 1rem; }
-    .table-container ol li,
-    .table-container ul li {
-      padding: .2rem; }
-
 /*================== Tarjetas =================*/
 .card-prod-container {
   display: flex;
@@ -582,7 +556,7 @@ footer {
     border-radius: 3rem;
     display: flex;
     flex-direction: column;
-    box-shadow: 1px 1px 5px grey;
+    box-shadow: 0 0 8px 2px grey;
     width: 350px; }
     .card-prod-container .card-prod .card-body-title {
       font-size: 1.6em;
@@ -685,6 +659,10 @@ footer {
         border-radius: 1rem;
         padding: 5px 15px;
         box-shadow: 1px 1px 5px grey; }
+    .card-prod-container .card-prod:hover, .card-prod-container .card-prod :focus {
+      transform: translateY(-1em);
+      box-shadow: 0 1em 1.2em #4e4e4e;
+      transition: all ease .5s; }
 
 /*================== Video =================*/
 #iframe-h2 {
@@ -1396,13 +1374,23 @@ form {
   .main-bg-products {
     background-size: 100% 80%;
     background-repeat: repeat-y; }
-  table {
-    font-size: .8em; }
+  .card-prod-container .card-prod {
+    margin: 4rem 0;
+    width: 250px; }
+    .card-prod-container .card-prod .card-prod-head .card-prod-img {
+      width: 150px;
+      left: 60%;
+      bottom: 30%; }
+    .card-prod-container .card-prod .card-prod-head .card-prod-title {
+      margin: 4rem 2rem 1rem 2rem;
+      font-size: 2em; }
   .video iframe {
     width: 250px;
     height: 200px; }
   #iframe-h2 {
     font-size: 1.5em; }
+  .slider-info h2 {
+    margin: 4rem 0; }
   .carousel {
     width: auto; }
   .carrusel h2 {
@@ -1434,28 +1422,6 @@ form {
   form .explain-container .contact-textarea {
     width: 90%;
     font-size: .8em; }
-  /* ================= products ============= */
-  .table-container {
-    padding: 7rem 0; }
-    .table-container thead > tr {
-      background-color: var(--secondary-color);
-      color: var(--white);
-      text-align: center;
-      font-size: 1em; }
-    .table-container tbody > tr > :nth-child(1) {
-      text-align: center; }
-    .table-container th,
-    .table-container td {
-      border: solid 1px black;
-      border-radius: 5px; }
-    .table-container tr {
-      background-color: transparent; }
-      .table-container tr > td:nth-child(3) {
-        text-align: center; }
-    .table-container ol,
-    .table-container ul {
-      margin: auto;
-      padding-left: .5rem; }
   /* ================= community ============= */
   .main-bg-community {
     background-size: 100% 80%;
@@ -1697,8 +1663,6 @@ form {
       border-bottom: none;
       border-bottom: 1px solid #0005; }
   /*======================= products ==================*/
-  table {
-    font-size: 1.2em; }
   /*======================= community ==================*/
   .comm-grid {
     grid-template-rows: 2fr 2fr 1fr 2fr; }

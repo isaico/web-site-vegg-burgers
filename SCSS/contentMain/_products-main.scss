@@ -1,48 +1,5 @@
 /*================== Products.html =================*/
-/*================== Tabla =================*/
 
-
-.table-container {
-    padding: 7rem 0;
-
-    thead>tr {
-        background-color: var(--secondary-color);
-        color: var(--white);
-        text-align: center;
-        font-size: 1.2em;
-    }
-
-    tbody>tr>:nth-child(1) {
-
-        text-align: center;
-
-    }
-
-    th,
-    td {
-        border: solid 1px black;
-        border-radius: 5px;
-        padding: 1em;
-    }
-
-    tr {
-        background-color: transparent;
-
-        >td:nth-child(3) {
-            text-align: center;
-        }
-    }
-
-    ol,
-    ul {
-        margin-top: 1rem;
-
-        li {
-            padding: .2rem;
-        }
-    }
-
-}
 
 /*================== Tarjetas =================*/
 
@@ -57,7 +14,7 @@
         border-radius: 3rem;
         display: flex;
         flex-direction: column;
-        box-shadow: 1px 1px 5px grey;
+        box-shadow: 0 0 8px 2px grey;
         width: 350px;
 
         // titulo
@@ -207,6 +164,11 @@
                 padding: 5px 15px;
                 box-shadow: 1px 1px 5px grey;
             }
+        }
+        &:hover,:focus{
+            transform:  translateY(-1em );
+            box-shadow: 0 1em 1.2em rgb(78, 78, 78);
+            transition: all ease .5s ;
         }
     }
 }
