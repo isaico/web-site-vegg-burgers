@@ -19,8 +19,14 @@ utilizando las tecnologias aprendidas:
 ## Certificado 
 ![certificado desarrollo web](https://user-images.githubusercontent.com/82178567/148244390-0df03dd3-abcb-4d33-8f5c-27a8d52d01fa.png)
 
-##Info Personal
+-------------------------------------------------------------------
+# Info Personal
+  Si te interesa que aporte algo de desarollo a tu proyecto/emprendimiento no dudes en contactarte: 
+  
 -Linkedin - [https://www.linkedin.com/in/isaias-garcia-187061209/]
+
 -CV Isaias Garcia - [https://www.dropbox.com/s/pel410igvbugwiy/Isaias-Garcia%28CV-Developer%29.pdf?dl=0]
--Instagram - [[https://www.instagram.com/isaico_developer]
+
+-Instagram - [https://www.instagram.com/isaico_developer]
+
 -Telefono personal - [+54 9 223-155-341995]
